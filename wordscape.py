@@ -21,7 +21,7 @@ def main():
 def find(letters, n): #call check for each length of word 3,4...etc.
 	toolObjects= []
 	words=[]
-	i = 3 
+	i = 3
 	while i <= n:
 		toolObjects.append(itertools.permutations(letters,i))
 		i+=1
@@ -33,10 +33,6 @@ def find(letters, n): #call check for each length of word 3,4...etc.
 			if d.check(word) and (word not in words):
 				words.append(word)
 	return(words)
-			
-
-def check(letters, n):  #for each call of check, need to verify every permutation of length n
-	print(foo)
 
 
 
